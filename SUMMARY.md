@@ -7,4 +7,3 @@
   * [3 - Coinflip](ethernaut/3-coinflip.md)
   * [4 - Telephone](ethernaut/4-telephone.md)
 * [Capture The Ether](capture-the-ether.md)
-* [Page 2](page-2.md)
