@@ -1,8 +1,8 @@
 # ⚠️ Read this first!
 
-These walkthroughs **directly gives you a solution** assuming that you already took enough time for each problem.
+Unlike other walkthrough documents, this gitbook gives you **direct solutions**.
 
-Make sure to take some time so you don't miss your opportunity to think about it!
+So make sure to take some time so you don't miss your opportunity to think about those problems!
 
 ### Author
 

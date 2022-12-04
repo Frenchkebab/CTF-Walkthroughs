@@ -54,9 +54,9 @@ contract Fallout {
 
 ### Goal of this level
 
-* Claiming ownership of the contract
+* Claim ownership of the contract
 
-## Walkthrough
+## Solution
 
 <details>
 
@@ -68,7 +68,7 @@ It's `Fal1out()` not `Fallout()`
 </details>
 
 ```javascript
-await contract.Fal1out();
+> await contract.Fal1out();
 ```
 
 Done! 😎

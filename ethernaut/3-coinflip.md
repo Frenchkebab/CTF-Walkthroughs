@@ -44,9 +44,14 @@ contract CoinFlip {
 
 ### Goal of this level
 
-* Guessing the correct outcome **10 times** in a row
+* guess the correct outcome **10 times** in a row
 
-## Walkthrough
+### What you should know before
+
+* Deterministic feature of blockchain\
+  \-> see [here](https://youtu.be/8FF3IBTMeK0)
+
+## Solution
 
 <details>
 
@@ -84,12 +89,12 @@ You merely have to run `makeGuess()` function `10` times in a row.
 
 Done! 😎
 
+#### Why the code uses block.number - 1
+
+The transaction itself affects the value of `blockhash`,\
+so `blockhash(block.number)` is fixed to be `0`.
+
 ## Key Takeaway
 
 * There's no such thing as true randomness in blockchain,\
   every thing is **deterministic**!
-
-
-
-```
-```

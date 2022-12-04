@@ -26,7 +26,16 @@ contract Telephone {
 }
 ```
 
-## Walkthroughs
+### Goal of this level
+
+* claim ownership of the contract
+
+### What you should know before
+
+* Difference between `tx.origin` and `msg.sender`\
+  ``-> see [here](https://www.youtube.com/watch?v=mk4wDlVB4ro)
+
+## Solution
 
 <details>
 
@@ -36,11 +45,6 @@ contract Telephone {
 `msg.sender` is the caller address that directly called the contract.
 
 </details>
-
-### What you should know before
-
-* Difference between `tx.origin` and `msg.sender`\
-  ``-> see [here](https://www.youtube.com/watch?v=mk4wDlVB4ro)
 
 ```solidity
 contract AttackTelephone {
