@@ -11,4 +11,6 @@
   * [7 - Force](ethernaut/7-force.md)
   * [8 - Vault](ethernaut/8-vault.md)
   * [9 - King](ethernaut/9-king.md)
+  * [16 - Preservation](ethernaut/16-preservation.md)
+  * [Page 1](ethernaut/page-1.md)
 * [Capture The Ether](capture-the-ether.md)
