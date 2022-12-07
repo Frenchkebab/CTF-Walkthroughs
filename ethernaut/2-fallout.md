@@ -73,6 +73,6 @@ It's `Fal1out()` not `Fallout()`
 
 Done! 😎
 
-### Key Takeaway
+### Key Takeaways
 
 * You could define the name of the constructor with the **name of the contract** in some **older versions** of Solidity

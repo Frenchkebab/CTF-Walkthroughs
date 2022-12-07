@@ -66,6 +66,6 @@ You just need to call `attack()` function.
 
 Done! 😎
 
-## Key Takeaway
+## Key Takeaways
 
 * In most cases, it is not recommended to use `tx.origin` in terms of **security**.

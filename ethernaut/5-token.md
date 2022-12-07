@@ -88,7 +88,7 @@ You will eventually have 22 tokens after you deploy `AttackToken` contract and c
 
 Done! 😎
 
-## Key Takeaway
+## Key Takeaways
 
 * Overflow/Underflow occured in solidity versions before 0.8
 

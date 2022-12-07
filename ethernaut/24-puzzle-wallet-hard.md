@@ -143,7 +143,7 @@ After that, we will update `admin`(slot1 of **`PuzzleProxy`**) to be our wallet 
 
 ### 0. Approach
 
-You can skip this and go to **1.** if you want to read solution directly.
+You can skip this and go to **1. Updating slot0** if you want to read solution directly.
 
 Our final goal is updating `admin` with our wallet address.
 
@@ -230,7 +230,7 @@ We are sending transaction to **PuzzleProxy** with calldata:
 ```
 
 If you wonder why we can't simply do like \
-`await contract.proposeNewAdmin(player);`, see [here](https://stackoverflow.com/questions/73249245/ethernaut-level-24-puzzle-wallet-to-which-contract-the-wallet-object-on-the-b).
+`await contract.proposeNewAdmin(player)`, see [here](https://stackoverflow.com/questions/73249245/ethernaut-level-24-puzzle-wallet-to-which-contract-the-wallet-object-on-the-b).
 
 Simply speaking, it's because they created the Web3 contract object with the ABI of the logic contract(**`PuzzleWallet`**) with the address of the proxy contract(**`PuzzleProxy`**).
 
@@ -263,7 +263,7 @@ In Proxy Pattern, we use **Proxy Contract**'s storage!
 
 ### 3. Reducing the balance to 0
 
-As just mentioned, the balance we are trying to reduce to 0 is actually balance of **`PuzzleProxy`** contract.
+As just mentioned, the balance we are trying to reduce to `0` is actually balance of **`PuzzleProxy`** contract.
 
 Let's check how much the contract has.
 
@@ -366,7 +366,7 @@ Within a single transaction calling `multicall`, we will do 3 things.
 3. call execute that withrdaws `0.002` ether.\
    (initial `0.001` and `0.001` that we just are sending now)
 
-in 2. the inner `multicall` (`multicall` called from `multicall`) will run in the same  context (`msg.value: 0.001 ether`).
+In **2.** the inner `multicall` (`multicall` called from `multicall`) will run in the same  context (`msg.value: 0.001 ether`).
 
 (This seems somewhat similar to reentrancy attack)
 
@@ -394,7 +394,7 @@ in 2. the inner `multicall` (`multicall` called from `multicall`) will run in th
 // '0'
 ```
 
-Now, we successfully drained the contract.
+Now, we've successfully drained the contract.
 
 Since we can pass the `require` condition `address(this).balance == 0`, what's left is updating `maxBalance` (slot1) to be `player` address!
 

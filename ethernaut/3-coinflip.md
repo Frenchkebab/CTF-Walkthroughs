@@ -94,7 +94,7 @@ Done! 😎
 The transaction itself affects the value of `blockhash`,\
 so `blockhash(block.number)` is fixed to be `0`.
 
-## Key Takeaway
+## Key Takeaways
 
 * There's no such thing as true randomness in blockchain,\
   every thing is **deterministic**!

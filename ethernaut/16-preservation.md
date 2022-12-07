@@ -121,6 +121,6 @@ You can pass in any value into the parameter.\
 
 Done! 😎
 
-## Key Takeaway
+## Key Takeaways
 
 * When using `delegatecall`, make sure that the contract you're calling has **the same storage layout** as the caller contract.

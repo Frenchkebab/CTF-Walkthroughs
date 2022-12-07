@@ -73,7 +73,7 @@ this will trigger `fallback()` function of **`Delegation`** contract and the mes
 
 Done! 😎
 
-## Key Takeaway
+## Key Takeaways
 
 * You can call a function using it's **function selector**.
 * If you call contract **`B`**'s function from contract **`A`** using `delegatecall`,\

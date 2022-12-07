@@ -70,7 +70,7 @@ Deploy `AttackForce` contract with some eth, and call `attack()` function.
 
 Done! 😎
 
-## Key Takeaway
+## Key Takeaways
 
 * You can forcefully send ether using `selfdestruct`.
 * So do not count on the invariant `address(this).balance == 0` for any contract logic.\

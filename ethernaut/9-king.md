@@ -95,7 +95,7 @@ and call `attack()` function.
 
 Done! 😎
 
-## Key Takeway
+## Key Takeways
 
 * There is 2 ways of receiving ether.\
   1\. payable `fallback()`\

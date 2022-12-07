@@ -58,7 +58,7 @@ We can read `slot1` and pass it as a parameter calling `unlock()`.
 
 Done! 😎
 
-## Key Takeaway
+## Key Takeaways
 
 * You can always read storage variables
 * So make sure not to store private information!
