@@ -14,6 +14,7 @@
   * [9 - King](ethernaut/9-king.md)
   * [16 - Preservation](ethernaut/16-preservation.md)
   * [24 - Puzzle Wallet (Hard)](ethernaut/24-puzzle-wallet-hard.md)
+  * [25 - Motorbike](ethernaut/25-motorbike.md)
 * [Capture The Ether](capture-the-ether.md)
 * [EVM Puzzles](evm-puzzles.md)
 * [More EVM Puzzles](more-evm-puzzles.md)
