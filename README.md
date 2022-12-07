@@ -1,5 +1,7 @@
 # ⚠️ Read this first!
 
+https://frenchkebab.gitbook.io/ctf-solutions/
+
 Unlike other walkthrough documents, this gitbook gives you **direct solutions**.
 
 So make sure to take some time so you don't miss your opportunity to think about those problems!
