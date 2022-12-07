@@ -407,3 +407,7 @@ Since we can pass the `require` condition `address(this).balance == 0`, what's l
 Done! 😎
 
 ## Key Takeaways
+
+* Just as we saw in [16 - Preservation](https://frenchkebab.gitbook.io/ctf-solutions/ethernaut/16-preservation), you should be aware of **Storage Conflicts** when using **Proxy Pattern**.
+* When using `delegatecall`, the code will run under caller's context.\
+  (including `address(this)`, `msg.value`, **storage variable**)
