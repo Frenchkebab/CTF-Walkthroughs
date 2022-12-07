@@ -2,6 +2,7 @@
 
 * [⚠️ Read this first!](README.md)
 * [Ethernaut](ethernaut/README.md)
+  * [Topics](ethernaut/topics.md)
   * [1 - Fallback](ethernaut/1-fallback.md)
   * [2 - Fallout](ethernaut/2-fallout.md)
   * [3 - Coinflip](ethernaut/3-coinflip.md)
@@ -12,5 +13,8 @@
   * [8 - Vault](ethernaut/8-vault.md)
   * [9 - King](ethernaut/9-king.md)
   * [16 - Preservation](ethernaut/16-preservation.md)
-  * [Page 1](ethernaut/page-1.md)
+  * [24 - Puzzle Wallet (Hard)](ethernaut/24-puzzle-wallet-hard.md)
 * [Capture The Ether](capture-the-ether.md)
+* [EVM Puzzles](evm-puzzles.md)
+* [More EVM Puzzles](more-evm-puzzles.md)
+* [Damn Vulnerable Defi](damn-vulnerable-defi.md)
