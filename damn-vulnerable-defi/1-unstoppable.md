@@ -1,8 +1,19 @@
 # 1 - Unstoppable
 
-{% hint style="info" %}
+### Problem with similar topic
 
-{% endhint %}
+* Ethernaut [15 - Naught Coin](https://frenchkebab.gitbook.io/ctf-solutions/ethernaut/15-naught-coin)
+
+## Walkthroguh
+
+<details>
+
+<summary>Key to solve this problem 🔑</summary>
+
+* **reentrancy** is not the only way to break contracts
+* always check `require` and `assert` conditions carefully
+
+</details>
 
 We will break the `assert` statement.
 
@@ -14,7 +25,7 @@ function flashLoan(uint256 borrowAmount) external nonReentrant {
     require(balanceBefore >= borrowAmount, "Not enough tokens in pool");
 
     // Ensured by the protocol via the `depositTokens` function
-    assert(poolBalance == balanceBefore); // <- we will break here
+    assert(poolBalance == balanceBefore); // <- we will break here!
 
     damnValuableToken.transfer(msg.sender, borrowAmount);
 
