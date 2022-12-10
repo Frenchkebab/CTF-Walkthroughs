@@ -1,6 +1,6 @@
 # Table of contents
 
-* [⚠️ Read this first!](README.md)
+* [Intro](README.md)
 * [Ethernaut](ethernaut/README.md)
   * [Topics](ethernaut/topics.md)
   * [1 - Fallback](ethernaut/1-fallback.md)

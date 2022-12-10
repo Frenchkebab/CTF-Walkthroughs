@@ -4,7 +4,7 @@
 
 * Ethernaut [15 - Naught Coin](https://frenchkebab.gitbook.io/ctf-solutions/ethernaut/15-naught-coin)
 
-## Walkthroguh
+## Solution
 
 <details>
 
@@ -49,7 +49,7 @@ function depositTokens(uint256 amount) external nonReentrant {
 
 But we can simply transfer tokens to **`UnstoppableLender`** contract by using ERC20 `transfer` function without using `depositTokens`.
 
-## Solution
+
 
 ```javascript
 it('Exploit', async function () {
@@ -58,3 +58,4 @@ it('Exploit', async function () {
 });
 ```
 
+Done! 😎

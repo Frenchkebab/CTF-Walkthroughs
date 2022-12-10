@@ -1,10 +1,8 @@
-# ⚠️ Read this first!
+# Intro
 
-https://frenchkebab.gitbook.io/ctf-solutions/
+[https://frenchkebab.gitbook.io/ctf-solutions/](https://frenchkebab.gitbook.io/ctf-solutions/)
 
-Unlike other walkthrough documents, this gitbook gives you **direct solutions**.
-
-So make sure to take some time so you don't miss your opportunity to think about those problems!
+Make sure to take some time so you don't miss your opportunity to think about those problems!
 
 ### Author
 
