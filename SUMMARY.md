@@ -25,6 +25,7 @@
   * [20 - Denial](ethernaut/20-denial.md)
   * [21 - Shop](ethernaut/21-shop.md)
   * [22 - Dex](ethernaut/22-dex.md)
+  * [23 - Dex Two](ethernaut/23-dex-two.md)
   * [24 - Puzzle Wallet (Hard)](ethernaut/24-puzzle-wallet-hard.md)
   * [25 - Motorbike](ethernaut/25-motorbike.md)
 * [Damn Vulnerable Defi](damn-vulnerable-defi/README.md)
