@@ -30,6 +30,7 @@
   * [25 - Motorbike](ethernaut/25-motorbike.md)
 * [Damn Vulnerable Defi](damn-vulnerable-defi/README.md)
   * [1 - Unstoppable](damn-vulnerable-defi/1-unstoppable.md)
+  * [2 - Naive Receiver](damn-vulnerable-defi/2-naive-receiver.md)
   * [12 - Climber](damn-vulnerable-defi/12-climber.md)
 * [Capture The Ether](capture-the-ether.md)
 * [EVM Puzzles](evm-puzzles.md)
