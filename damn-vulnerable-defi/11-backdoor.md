@@ -127,7 +127,6 @@ import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@gnosis.pm/safe-contracts/contracts/GnosisSafe.sol";
 import "../DamnValuableToken.sol";
 import "./WalletRegistry.sol";
-import "hardhat/console.sol";
 
 contract AttackWalletRegistry {
     // Note that these variables are declared as immutable
@@ -156,7 +155,6 @@ contract AttackWalletRegistry {
 
     function attack(address[] calldata _beneficiaries) external {
         for (uint256 i = 0; i < 4; i++) {
-            console.log(i);
             address[] memory beneficiary = new address[](1);
             beneficiary[0] = _beneficiaries[i];
             
