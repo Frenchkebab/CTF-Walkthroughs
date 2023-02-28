@@ -33,8 +33,16 @@
 * [Damn Vulnerable Defi](damn-vulnerable-defi/README.md)
   * [1 - Unstoppable](damn-vulnerable-defi/1-unstoppable.md)
   * [2 - Naive Receiver](damn-vulnerable-defi/2-naive-receiver.md)
+  * [3 - Truster](damn-vulnerable-defi/3-truster.md)
+  * [Page 1](damn-vulnerable-defi/page-1.md)
   * [11 - Backdoor](damn-vulnerable-defi/11-backdoor.md)
   * [12 - Climber](damn-vulnerable-defi/12-climber.md)
-* [Capture The Ether](capture-the-ether.md)
-* [EVM Puzzles](evm-puzzles.md)
+* [Capture The Ether](capture-the-ether/README.md)
+  * [Lotteries](capture-the-ether/lotteries/README.md)
+    * [Guess the number](capture-the-ether/lotteries/guess-the-number.md)
+* [EVM Puzzles](evm-puzzles/README.md)
+  * [Puzzle 1](evm-puzzles/puzzle-1.md)
+  * [Puzzle 2](evm-puzzles/puzzle-2.md)
 * [More EVM Puzzles](more-evm-puzzles.md)
+
+## Group 1
